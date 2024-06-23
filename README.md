@@ -13,5 +13,7 @@ Once it is done, you will have to run the python app.py file using -
 
 `python3 app.py`
 
-The code will then execute and you will have to go to port 5000 of your loopback address(127.0.0.1)
+The code will then execute and you will have to go to port 5000 of your loopback address(127.0.0.1) -
+
+`127.0.0.1:5000`
 
