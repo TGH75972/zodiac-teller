@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Zodiac Sign</title>
+    <title>Zodiac Sign Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1 id="t1">Zodiac Teller</h1>
     <div class="container">
-        <h1>Get Your Zodiac Sign</h1>
-        <form action="/predict" method="post">
-            <label for="name">Enter your name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="birthday_month">Select your birthday month:</label>
+        <h1 id="t2">Predict Your Zodiac Sign</h1>
+        <form action="{{ url_for('predict') }}" method="post">
+            <label id="t3" for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <label id="t4" for="birthday_month">Select your birthday month:</label>
             <select id="birthday_month" name="birthday_month" required>
                 <option value="January">January</option>
                 <option value="February">February</option>
@@ -26,10 +27,9 @@
                 <option value="October">October</option>
                 <option value="November">November</option>
                 <option value="December">December</option>
-            </select><br><br>
+            </select>
             <button type="submit">Predict</button>
         </form>
     </div>
 </body>
 </html>
-
