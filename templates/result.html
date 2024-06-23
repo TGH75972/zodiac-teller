@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    
     <div class="container">
         <h1>Hello, {{ name }}!</h1>
         <p>Your zodiac sign based on your birthday month ({{ birthday_month }}) is <strong>{{ zodiac_sign }}</strong>.</p>
         <p><a href="/">Back to Predict Another</a></p>
+        <p><a href="{{ url_for('info', sign=zodiac_sign) }}">Info about {{ zodiac_sign }}</a></p>
     </div>
 </body>
 </html>
