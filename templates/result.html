@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Sign Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, {{ name }}!</h1>
+        <p>Your zodiac sign based on your birthday month ({{ birthday_month }}) is <strong>{{ zodiac_sign }}</strong>.</p>
+        <p><a href="/">Back to Predict Another</a></p>
+    </div>
+</body>
+</html>
